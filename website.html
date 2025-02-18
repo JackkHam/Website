@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/website.css">
-</head>
-<body>
-<header>
-<nav>
-<ul>
-<li><a href="#intro">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</header>
-<main>
-<section id="intro">
-<div class="Container">
-<h2>My name is Doggo</h2>
-</div> 
-</section>
 
-<section id="about">
-<div class="container">
-<h1>About Me</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, similique?</p>
-<ul>
-<li>Not Poop qalified</li>
-<li>Software Engineer</li>
-<li>GATE AIR 01</li>
-</ul>
-</div>
-</section>
+  <head>
 
-<section id="contact">
-<div class="container">
-<h1>Contact me</h1>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, laudantium.</p>
-<ul>
-<li>Email ID</li>
-<li>Insta ID</li>
-<li>Facebook ID</li>
-</ul>
-</div>
-</section>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>Jacks Website</title>
 
-</main>
-<footer>
-<p>©Hamilton foundation</p>
-</footer>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="website.css" />
+
+  </head>
+
+
+  <body> <!-- Body start-->
+
+
+    <nav> <!-- Nav Bar for Website and logo -->
+      <div class="nav-main">
+        <div class="nav-header">
+          <img src="./jackLogo.svg" alt="logo" />
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#resume">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav> <!-- End of nav bar -->
+
+    <div class="bg-image" id="bg-image"></div> <!-- Back ground -->
+    <div class="container" id="about">
+    <h1> About Me </h1>
+    
+    <p> My name is Jack Hamilton. I'm currently undertaking my fourth year in computer science
+        at the University of Victoria.
+    </p>
+
+
+    </div> <!-- End of Container (format) -->
+
+    <div class="container" id="resume">
+
+        <h1>Resume</h1>
+
+    </div>
+
+    <script src="website.js"></script>
+  </body>
 </html>
