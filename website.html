@@ -19,7 +19,6 @@
 
   </head>
 
-
   <body> <!-- Body start-->
 
 
@@ -31,35 +30,113 @@
         </div>
         <ul class="menu">
           <li>
-            <a href="#">Home</a>
+            <a href="#" onclick="showSection('home')"> Home </a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about" onclick="showSection('about')"> About </a>
           </li>
           <li>
-            <a href="#resume">Resume</a>
+            <a href="#resume" onclick="showSection('resume')"> Resume </a>
+          </li>
+          <li>
+            <a href="#projects" onclick="showSection('projects')" class="projects-link"> Projects </a> 
           </li>
         </ul>
       </div>
     </nav> <!-- End of nav bar -->
 
     <div class="bg-image" id="bg-image"></div> <!-- Back ground -->
-    <div class="container" id="about">
-    <h1> About Me </h1>
+
+
+
+    <div class="container elevated-section" id="about"> <!-- Beginning of About-->
     
-    <p> My name is Jack Hamilton. I'm currently undertaking my fourth year in computer science
+        <h1> About Me </h1>
+    
+    <p> My name is Jack Hamilton, and I'm currently undertaking my fourth year in computer science
         at the University of Victoria.
     </p>
+    <!--<p> Some of passions are tech related as one would hope of a computer science student. I have a keen interest in web design, game development, statistics, physics, as well as data analysis.</p>
+    <p> Other than those dreary topics, some of my hobbies are reading, sports (Go Canucks!), writing, music or more specifically the guitar, as well as skiing and working out.</p>
+    <p> My current long term goals (other than figuring out what I'm eating for breakfast tomorrow) are to stay consistent in keeping healthy as well as continue to facilitate my skills by
+        developing new projects in new langauges, and to continue writing my Sci-Fi novel that I'm in the later stages of writing.
+    </p>
+    <p> Thanks for reading, and enjoy my website!</p> -->
+
+    </div> <!-- End of About -->
 
 
-    </div> <!-- End of Container (format) -->
 
-    <div class="container" id="resume">
+    <div class="container elevated-section" id="resume"> <!-- Beginning of Resume-->
 
         <h1>Resume</h1>
 
+        <iframe src="resume_website.pdf" width="100%" height="100vh"></iframe>
+    </div> <!-- End of Resume -->
+
+
+
+
+    <div id="projects" style="display: none;"> 
+        <div class="container elevated-section" >
+
+            <h1> Projects<!-- (and all their glory)--> </h1>
+
+        </div> 
+
+
+        <div class="lang-sep">
+          <p> Coming soon... </p>
+       </div>
+       <!-- Enter project folder + html files for projects in openProject
+        Update Javascript for it as well.-->
+       <div class="project-container">
+        <div class="project-box" onclick="openProject('project1')">
+            <img src="project2-thumbnail.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+        </div>
+    
+        <div class="project-box" onclick="openProject('project2')">
+            <img src="project2-thumbnail.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+        </div>
+    
+        <div class="project-box" onclick="openProject('project3')">
+            <img src="project3-thumbnail.jpg" alt="Project 3">
+            <h3>Project 3</h3>
+        </div>
+    </div>
+        
     </div>
 
+
+
+
+    <!-- Footer begins -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Contact me at: <a href="mailto:jackhamilton444@gmail.com">jackhamilton444@gmail.com</a></p>
+            <p>Find me on <a href="https://www.linkedin.com/in/jack-hamilton-a83798193" target="_blank">LinkedIn</a> | <a href="https://github.com/JackkHam" target="_blank">GitHub</a></p>
+            <p>Have a wonderful day!</p>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+     <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <iframe id="project-frame" src="" frameborder="0"></iframe>
+      </div>
+    </div>
+
+
+
     <script src="website.js"></script>
+
+
+
+
   </body>
 </html>
