@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+    line-height: 2.2;
+    font-size: 0.875rem;
+
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef); /* Light gray gradient */
+  }
+
+  .bg-image {
+    width: 100%;
+    height: 100vh;
+    background: url("Photos/bg2.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 115%;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+  
+  nav {
+
+    height: 65px; /* Adjust height */
+    position: sticky;
+    top: 0;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+  }
+
+  .nav-main img { 
+    width: 50%; 
+    height: 2%;
+    
+}
+  
+  .fa-bars {
+    font-size: 1.5rem;
+    color: #e94949;
+    cursor: pointer;
+  }
+  
+  .fa-bars:hover {
+    color: black;
+  }
+  
+  .menu a {
+    color: grey;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+  } 
+
+  .menu a:hover {
+    background: #f8a5a5;
+    color: #e94949;
+    padding-left: 1.5rem;
+  }
+  
+  
+  .menu {
+    
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+  } 
+  
+  .show-menu {
+    height: 10rem;
+  }
+  
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .projects-link {
+    color: #B22222 !important;
+    font-weight: bold; 
+  }
+  
+  #resume iframe { /* Makes resume full length*/
+    width: 100%;      /* Ensure it stretches full width */
+    height: 100vh;    /* Full height of the viewport */
+    border: none;     /* Remove any default border */
+}
+  .container {
+    background: white; /* Makes it stand out from the background */
+    padding: 50px; /* Creates spacing inside the box */
+    margin: 50px auto; /* Centers it and adds spacing between sections */
+    max-width: 800px; /* Controls the width */
+    border-radius: 10px; /* Soft rounded edges */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .project-container {
+    display: flex;  /* Enables horizontal alignment */
+    justify-content: center;  /* Centers them horizontally */
+    gap: 125px;  /* Adds space between the boxes */
+}
+
+  .elevated-section {
+    background: white;
+    padding: 50px;
+    margin: 50px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+ }
+  .elevated-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+  
+  @media (min-width: 800px) {
+    .nav-main {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+
+    .container {
+        padding: 10px;
+    }
+
+    }
+    
+  
+    .nav-header {
+      padding: 0;
+    }
+    .fa-bars {
+      display: none;
+    }
+  
+    .menu {
+      height: auto;
+      display: flex;
+    }
+  
+    .menu a {
+      padding: 0;
+      margin: 0 0.5rem;
+    }
+    .menu a:hover {
+      padding: 0;
+      background: transparent;
+    }
+}
+    html {
+        scroll-behavior: smooth;
+      }
+
+
+    .footer {
+        background: #333;            /* Dark background color */
+        color: #fff;                 /* White text */
+        padding: 40px 20px;          /* Space inside the footer */
+        text-align: center;          /* Center the text */
+        margin-top: 50px;            /* Space above the footer */
+        box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    } 
+    .footer-container a {
+        color: #f8a5a5;              /* Link color */
+        text-decoration: none;       
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    .footer-container a:hover {
+        color: #e94949;              /* Hover effect */
+    }
+    .footer-container p {
+        margin: 10px 0;              /* Spacing between paragraphs */
+    }
+
+    .lang-sep {
+
+      background: rgb(214, 104, 104); /* Makes it stand out from the background */
+      padding: 5px;
+      margin: 50px auto;
+      width: 800px; /* Controls the width */
+      border-radius: 10px; /* Soft rounded edges */
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      display: center;
+      height: 50px; /* Adjust this value to your preference */
+
+    }
+  
+    /* Modal Overlay */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  justify-content: center;
+  align-items: center;
+}
+/* Modal Content Box */
+.modal-content {
+  background: white;
+  width: 80%;
+  height: 80%;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;  /* Prevents weird overflow issues */
+}
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+.close-btn:hover {
+  color: red;
+}
+
+/* Iframe inside modal */
+iframe {
+  width: 100%;
+  height: 90%;
+  border: none;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.project-box {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  /*background: url("Photos/prj1.jpg");*/
+}
