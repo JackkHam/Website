@@ -1,6 +1,4 @@
 
-
-
 //Background image
 const bgImageEl = document.getElementById("bg-image");
 
