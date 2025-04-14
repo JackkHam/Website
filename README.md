@@ -14,6 +14,8 @@ The code files used to make it:
 
 Other Important Files
 - Projects (Folder)
+    - A 2D-Platformer built Godot engine with GDScript
+    - A data analysis of Spotify Daily Charts using SQL, Jupiter Notebook, and Python
 
 All my projects are uploaded as to my website as well, and are either downloadable or interactive depending on their nature.
 
