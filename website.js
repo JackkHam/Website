@@ -24,7 +24,7 @@ bar.addEventListener("click", () => {
 
 function showSection(sectionId) {
 
-    // Show the selected section
+    //Show the selected section
 
     if (sectionId === "projects") {
 
@@ -47,13 +47,15 @@ function showSection(sectionId) {
 
 
   function openProject(projectName) {
-    document.getElementById("project-modal").style.display = "flex"; // Show modal
-    document.getElementById("project-frame").src = projectName; // Load project in iframe
+    document.getElementById("project-modal").style.display = "flex"; //Show modal
+    document.getElementById("project-frame").src = projectName; //Load project in iframe
+    document.querySelector("nav").style.display = "none";
 }
 
 function closeModal() {
-    document.getElementById("project-modal").style.display = "none"; // Hide modal
-    document.getElementById("project-frame").src = ""; // Clear iframe source to stop loading
+    document.getElementById("project-modal").style.display = "none"; //Hide modal
+    document.getElementById("project-frame").src = ""; //Clear iframe source to stop loading
+    document.querySelector("nav").style.display = "block";
 }
 
 //Closes if click outside box
@@ -61,8 +63,9 @@ document.addEventListener("click", function(event) {
   let modal = document.getElementById("project-modal");
   let modalContent = document.querySelector(".modal-content");
 
-  // Close modal if clicked outside of the content box
+  //Close modal if clicked outside of the content box
   if (event.target === modal) {
       closeModal();
   }
+
 });
