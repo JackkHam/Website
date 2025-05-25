@@ -29,7 +29,16 @@ body {
     text-align: center;
   }
   #about {
-    text-align: center;
+     max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    color: #333;
   }
   
   nav {
@@ -192,7 +201,7 @@ body {
     .footer-container p {
         margin: 10px 0;           
     }
-
+/*
     .lang-sep {
 
       background: rgb(214, 104, 104);
@@ -205,7 +214,7 @@ body {
       display: center;
       height: 50px;
 
-    }
+    } */
   
 .modal {
   display: none; 
