@@ -11,9 +11,6 @@ function updateImage() {
   bgImageEl.style.backgroundSize = 115 - window.pageYOffset / 30 + "%";
 }
 
-
-
-
 //NAV BAR
 const bar = document.querySelector(".fa-bars");
 const menu = document.querySelector(".menu");
